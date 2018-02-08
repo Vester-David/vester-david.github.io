@@ -1,4 +1,4 @@
-var cities = [];
+    var cities = [];
     cities[0] = "New York City";
 	cities[1] = "Los Angeles";
 	cities[2] = "Chicago";
@@ -25,19 +25,22 @@ for ( var i = 0; i < tenlargestcities.length; i++)
 }
 
 // While Loop Counter
-function WhileCounter() 
-{
+function WhileCounter() {
     var number = document.getElementById('usernumber');
     var counter = number.value;
+    var i = 0;
     output = document.getElementById('whilecounter');
     
     do {
-        var i = 0;
-        output.innerHTML += i;
+        setInterval(function() {
+        output.innerHTML = i;
         i++;
-        
+            
+        } , 1000)
     } while (i < number);
 }
+
+
 
 // Conditional Statements - Guess Numbers
 var random = Math.floor(Math.random() * 100) + 1;

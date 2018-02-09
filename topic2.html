@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <title>David Vester - CIT 226 - Topic 2</title>
+        <script src="topic2.js"></script>
+    </head>
+
+    <body>
+         <header>
+		 <a href="/index.html">Home</a>
+         <h1>Topic 2 - Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h1>
+        </header>
+        <main>
+		<article>To quote W3 on the topic of JS Objects. The website states: 
+		<quote>"In JavaScript, objects are king. If you understand objects, you understand JavaScript...All JavaScript values, except primitives, are objects...Objects are Variables Containing Variables"</quote>
+		</article>
+        <h2>Object Creation and Methods</h2>
+            
+            <h3>Example 1 - Creating an object using Object Literal.</h3>
+			
+            <p>var car = {make:"Suzuki", model:"Samurai", year:"1988", color:"White", type:"Tintop"};</p>
+            
+            <p id="example1"></p>
+			<input type="button" onclick="example1()" value="Create a Car Object" />
+
+			<h2>Object Properties</h2>
+			<h3>Example 2 - Object Properties</h3>
+			
+			
+            <p>Objects are defined by name:value pairs of information. The "name" part of an object IS the object, while the "value" part of the object is a property for that object. They can called by car.year or car["year"]</p>
+            
+            <p id="example2"></p>
+			<input type="button" onclick="example2()" value="Loop through and display object properties" />
+
+            <h2>Object Methods</h2>
+			<h3>Example 3 - Create methods to perform specific tasks on object properties</h3>
+			
+			
+            <p>A method is a function for that object that can return specific information</p>
+            
+            <p id="example3"></p>
+			<input type="button" onclick="example3()" value="Run makeModel() method" />
+			
+			<h2>Object Constructors and Instantiate</h2>
+			<h3>Example 4</h3>
+			
+			
+            <p>Establish a constructor template for an objects that expects certain properties and instantiate a new object<br>
+			var yourcar = new coolCar("Ford", "Mustang", "2018", "Red");
+			</p>
+            
+            <p id="example4"></p>
+			<input type="button" onclick="example4()" value="Creat a constructor object" />
+   
+           
+        
+        </main>
+    </body>
+</html>

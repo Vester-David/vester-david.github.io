@@ -45,9 +45,9 @@ function WhileCounter() {
 // Conditional Statements - Guess Numbers
 var random = Math.floor(Math.random() * 100) + 1;
 console.log(random);
-function Guess()
+function Guess(userparam)
 {
-  var guess = document.getElementById("userguess").value;
+  var guess = userparam;
   var output = document.getElementById("guess");
   var compare = guess;
   if (guess < random) {

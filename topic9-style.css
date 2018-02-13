@@ -1,0 +1,31 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+	color: white;
+}
+
+#div1:hover {
+    width: 300px;
+}
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background: green;
+	position: relative;
+	color: white;
+	
+
+}
+
+/* Standard syntax */
+@keyframes animatediv {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}

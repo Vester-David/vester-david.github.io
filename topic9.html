@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <title>JS Event Examples</title>
+        <link rel="stylesheet" href="topic9-style.css">
+    </head>
+
+    <body onload="alert('this page has loaded')">
+        <header>
+		<a href="/index.html">Home</a>
+		<h1>Topic 9 - Javascript Events</h1>
+		</header>
+        <main>
+		<h2>Types of Javascript Events:</h2>
+		<ul>
+		<li>Mouse Events</li>
+		<li>Keyboard Events</li>
+		<li>Frame/Object Events Events</li>
+		<li>Form Events</li>
+		<li>Drag Events</li>
+		<li>Clipboard Events</li>
+		<li>Print Events</li>
+		<li>Media Events</li>
+		<li>Mobile Touch Events</li>
+		</ul>
+		<p>If the user can interact with it, you can pretty much capture what they did and perform various actions on that interation.</p>
+		<p>Can be handled inline through "button onclick="alert('you clicked!')" or "button onclick="myFunction()", or through addEventListener() in Javascript:<br>
+		<pre>document.getElementById("myBtn").addEventListener("click", function(){</pre>
+		<pre>document.getElementById("demo").innerHTML = "Hello World";});</pre></p>
+		<p>Source: <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">https://www.w3schools.com/jsref/dom_obj_event.asp</a></p>
+		<hr>
+		<h3>Mouse events - "onclick", "oncontextmenu", "onmouseover", "onmouseout", </h3>
+		<button onclick="alert('you clicked!')">onclick()</button>	
+		<button oncontextmenu="alert('you right clicked!')">oncontextmenu() *Right Click*</button>	
+		<button onmouseover="alert('you moused over!')">onmouseover()</button>
+		<button onmouseout="alert('you moused out!')">onmouseout()</button>
+        <p id="demo1"></p>
+		<hr>
+		<h3>CSS Transition - "transitionend"</h3>
+		<div id="div1"></div>
+		<hr>
+        <h3>CSS Animation - "animationstart & "animationend"</h3>
+		<div id="div2" onclick="divAnimate()">Click to Start</div>
+        <hr>
+		<h3>Mobile Event - "ontouchstart"</h3>
+		<div id="div3" ontouchstart="alert('Mobile Touch Start Test')">Mobile Touch Start</div>
+		<hr>
+		<h3>Element Load - "onload"</h3>
+		<p id="demo2"></p>
+		<iframe id="myFrame" onscroll="alert('Scrolled')" src="newpage.html" width="300" height="300" scrolling="yes"></iframe>
+		
+		</main>
+	<script src="topic9.js"></script>
+    </body>
+</html>
+
+
+

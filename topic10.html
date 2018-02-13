@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <title>HTML 5 Tags - Video, Audio and Canvas</title>
+        <link rel="stylesheet" href="topic10-style.css">
+    </head>
+
+		<body>
+        <header>
+		<a href="/index.html">Home</a>
+		<h1>Topic 10 - HTML 5 Tags - Video, Audio and Canvas</h1>
+		</header>
+        <main>
+		<h2>HTML 5 allows you to embed video, audio and image files with simple tags.</h2>
+		<h3>&lt;Video&gt; tag attributes</h3>
+		<ul>
+		<li>src</li>
+		<li>controls</li>
+		<li>autoplay</li>
+		<li>width</li>
+		<li>height</li>
+		<li>loop</li>
+		<li>muted</li>
+		<li>poster="image.jpg" thumbnail</li>
+		<li>preload</li>
+		</ul>
+		<p>An example tag for video:</p>
+		<pre>&lt;video src="microburst.mp4" width="500" controls autoplay loop muted&gt;&lt;/video&gt;</pre>
+		<h3>You can also have fall back options for a video if the browser doesn't support a video format or HTML 5.</h3>
+		<pre>
+			&lt;video controls&gt;
+			&lt;source src="kitties.mp4" type="video/mp4; codecs='avc1, mp4a'"&gt;
+			&lt;source src="kitties.webm" type="video/webm; codecs='vp8.0, vorbis'"&gt;
+			&lt;p&gt;Your browser does not support the video tag.&lt;/p&gt;
+			&lt;/video&gt;
+		</pre>
+		<h4>Microburst over Tuscon Arizona</h4>
+		<video src="microburst.mp4" controls autoplay loop height="300"></video>
+		<hr>
+		<h3>&lt;Audio&gt; tag</h3>
+		<p>Audio files can be embedded in the same way as video files using the src, controls, autoplay and loop attributes to give the user options on how they can control the audio file.</p>
+		
+		<p>An example tag for audio:</p>
+		<pre>&lt;audio src="amendrumbreak.mp3" controls &gt;&lt;/audio&gt;</pre>
+		
+		<h4>Drum Break called "Amen"</h4>
+		<audio src="amendrumbreak.mp3" controls></audio>
+		<hr>
+		<h3>Canvas tag</h3>
+		<p>the Canvas tag specifies an "area" of space on the page that can have images, lines, shapes, gradients, text and more drawn on to it through Javascript code. By itself, the Canvas space us useless without input on what various events can do. You can wait for mouse clicks or movements to do various things or simply run javascript code that can be used to draw things by algorithm or coordinate. You can animate shapes or lines and manipulate pixels like converting a color image to black and white.</p>
+		
+		<p>A circle drawn on a canvas element:</p>
+		<canvas id="draw" width="100" height="100"></canvas>
+		
+		<pre>
+&lt;canvas id="draw" width="100" height="100"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+var c = document.getElementById("draw");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(50,50,40,0,2*Math.PI);
+ctx.stroke();
+&lt;/script&gt;
+		</pre>		
+		
+		<p>Click for an additional canvas example: <a href="topic10-canvas.html">topic10-canvas.html</a></p>
+		<hr>
+		<p>Sources:<br>
+		<a href="http://htmldog.com/guides/html/advanced/embeddedcontent/">http://htmldog.com/guides/html/advanced/embeddedcontent/</a><br>
+		<a href="https://www.w3schools.com/html/html5_canvas.asp">https://www.w3schools.com/html/html5_canvas.asp</a>
+		</p>
+		
+		<script src="topic10.js"></script>	
+    </body>
+</html>
+
+
+

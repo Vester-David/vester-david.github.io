@@ -1,0 +1,118 @@
+#example1 {
+    display: inline-block;
+    background-color:green;
+    width:100px;
+    height:50px;
+	transition: all 0.5s ease;
+	color: white;
+}
+
+#example1:hover {
+    
+    background-color:forestgreen;
+    transition: all 0.5s ease;
+    height:100px;
+	
+
+}
+
+#example2 {
+
+    background-color:orange;
+    width:100px;
+    height:50px;
+	transition: width 15s ease-in-out;
+	color: white;
+}
+
+
+#example2:active {
+	
+	width:900px;
+	
+}
+
+#example3 {
+	border: 3px solid orange;
+	width:100px;
+    height:100px;
+	
+	transform: translateX(50px) rotate(15deg) translateY(15px);
+	
+}
+
+
+
+#example4 {
+	border: 3px solid purple;
+	width:100px;
+    height:100px;
+	
+	transform: perspective(50px);
+	
+}
+
+#example4:hover {
+
+	transform: rotateY(180deg);
+	
+}
+
+#wrapper {
+    display: inline-block;
+    
+}
+#example5 {
+    float: left;
+    background-color:green;
+    width:30px;
+    height:30px;
+	-webkit-animation:pong 3s linear infinite ;
+
+}
+
+#leftpaddle {
+    float: left;
+    background-color:red;
+    width:5px;
+    height:80px;
+	-webkit-animation:leftpaddle 3s linear infinite ;
+
+}
+#rightpaddle {
+    margin-left:530px;
+    background-color:red;
+    width:5px;
+    height:80px;
+	-webkit-animation:leftpaddle 3s linear infinite ;
+
+}
+
+@-webkit-keyframes pong{
+  0% {margin-top:0px;}
+  25%{margin-left:250px;margin-top:250px}
+  50%{margin-left:490px;margin-top:30px;}
+  75%{margin-left:250px;margin-top:250px}
+  100%{margin-left:0px;margin-top:0px}
+  
+}
+@-webkit-keyframes leftpaddle{
+  0% {margin-top:0px;}
+  25%{margin-top:250px}
+  50%{margin-top:30px;}
+  75%{margin-top:250px}
+  100%{margin-top:0px}
+  
+}
+@-webkit-keyframes rightpaddle{
+  0% {margin-left:500px;margin-top:0px;}
+  25%{margin-left:500px;margin-top:250px}
+  50%{margin-left:500px;margin-top:30px;}
+  75%{margin-left:500px;margin-top:250px}
+  100%{margin-left:500px;margin-top:0px}
+  
+}
+
+
+
+
